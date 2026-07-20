@@ -207,16 +207,14 @@ Sample 2 predicted quality: 6.41
 
 ---
 
-# Model Evaluation
+# Model Performance
 
-The trained model should be evaluated using appropriate regression metrics such as:
+The trained Random Forest Regressor was evaluate on a held-out test set (20% of the data):
 
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
-* Mean Absolute Error (MAE)
-* R² Score
+**Mean Squared Error (MSE):**0.301
+**R2 Score:**0.540
 
-These metrics help determine how accurately the model predicts wine quality.
+An R2 of 0.54 means the model explains about 54% of the varience in wine quality scores based on physicochemical properties alone - a resonable result given wine quality also depends on subjective sensory factors (like taste and aroma) that are not in the chemical data.
 
 ---
 
